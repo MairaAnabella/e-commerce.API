@@ -10,7 +10,7 @@ class FechaEspecialSeeder extends Seeder
 {
      public function run(): void
     {
-        DB::table('fecha_especial')->insert([
+        DB::table('fechas_especiales')->insert([
             [
                 'fecha' => Carbon::create(2025, 1, 1, 0, 0, 0),
                 'descripcion' => 'Año Nuevo',

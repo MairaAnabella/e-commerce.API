@@ -25,6 +25,12 @@ class User extends Authenticatable
         'fecha_baja_vip'
     ];
 
+    public function carritos()
+    {
+        return $this->hasMany(Carrito::class, 'usuario_id');
+    }
+
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -32,7 +38,7 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-    
+
     ];
 
     /**

@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Carrito;
+use App\Models\CarritoProducto;
+use App\Models\Compra;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,6 +21,9 @@ class DatabaseSeeder extends Seeder
             FechaEspecialSeeder::class,
             UserSeeder::class,
             ProductoSeeder::class,
+            CarritoSeeder::class,
+            CarritoProductoSeeder::class,
+            CompraSeeder::class,
 
         ]);
         /*  User::factory()->create([

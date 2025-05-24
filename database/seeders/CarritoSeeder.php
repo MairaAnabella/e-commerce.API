@@ -2,16 +2,37 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 
 class CarritoSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        //
+        // Asegurate de tener usuarios con ID 1 a 3 o adaptá estos IDs
+        DB::table('carritos')->insert([
+            [
+                'usuario_id' => 1,
+                'tipo' => 'temporal',
+                'fecha_simulada' => Carbon::now(),
+                'fecha_finalizacion' => Carbon::now()->addDays(7),
+                'estado' => 'activo',
+            ],
+            [
+                'usuario_id' => 2,
+                'tipo' => 'reservado',
+                'fecha_simulada' => Carbon::now()->subDays(5),
+                'fecha_finalizacion' => Carbon::now()->addDays(2),
+                'estado' => 'vencido',
+            ],
+            [
+                'usuario_id' => 3,
+                'tipo' => 'cancelado por usuario',
+                'fecha_simulada' => Carbon::now()->subDays(10),
+                'fecha_finalizacion' => Carbon::now()->subDays(1),
+                'estado' => 'cancelado',
+            ],
+        ]);
     }
 }

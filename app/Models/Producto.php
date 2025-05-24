@@ -15,4 +15,12 @@ class Producto extends Model
         'nombre',
         'precio',    
     ];
+
+    public function carritos()
+{
+    return $this->belongsToMany(Carrito::class, 'carrito_productos')
+                ->withPivot('cantidad', 'precio_unitario');
+              
+}
+
 }
