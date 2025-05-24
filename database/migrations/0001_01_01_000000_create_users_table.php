@@ -16,10 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->boolean('is_vip');
-        /*     $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps(); */
+            $table->timestamp('fecha_alta_vip')->nullable();
+            $table->timestamp('fecha_baja_vip')->nullable();
+            ;
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

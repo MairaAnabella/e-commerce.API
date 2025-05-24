@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'is_vip',
+        'fecha_alta_vip',
+        'fecha_baja_vip'
     ];
 
     /**
