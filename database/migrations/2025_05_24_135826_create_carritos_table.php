@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('tipo');
             $table->date('fecha_finalizacion')->nullable();
             $table->date('fecha_simulada');
-            $table->enum('estado', ['activo', 'vencido', 'cancelado'])->default('activo');
+            $table->enum('estado', ['activo', 'finalizado'])->default('activo');
 
            
             $table->foreign('usuario_id')->references('id')->on('users')->onDelete('cascade');

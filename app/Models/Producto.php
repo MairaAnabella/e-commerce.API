@@ -13,7 +13,8 @@ class Producto extends Model
    
     protected $fillable = [
         'nombre',
-        'precio',    
+        'descripcion' ,   
+        'precio',
     ];
 
     public function carritos()

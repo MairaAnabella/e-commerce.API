@@ -24,14 +24,14 @@ class CarritoSeeder extends Seeder
                 'tipo' => 'reservado',
                 'fecha_simulada' => Carbon::now()->subDays(5),
                 'fecha_finalizacion' => Carbon::now()->addDays(2),
-                'estado' => 'vencido',
+                'estado' => 'finalizado',
             ],
             [
                 'usuario_id' => 3,
                 'tipo' => 'cancelado por usuario',
                 'fecha_simulada' => Carbon::now()->subDays(10),
                 'fecha_finalizacion' => Carbon::now()->subDays(1),
-                'estado' => 'cancelado',
+                'estado' => 'finalizado',
             ],
         ]);
     }

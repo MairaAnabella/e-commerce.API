@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 class Carrito extends Model
 {
     use HasFactory, Notifiable;
-
+ public $timestamps = false;
     protected $fillable = [
         'estado',
         'fecha_simulada',
