@@ -14,14 +14,19 @@ class FechaEspecialSeeder extends Seeder
             [
                 'fecha' => Carbon::create(2025, 1, 1, 0, 0, 0),
                 'descripcion' => 'Año Nuevo',
+                'tipo' => 'PROMO_ESPECIAL',
             ],
             [
                 'fecha' => Carbon::create(2025, 5, 1, 0, 0, 0),
                 'descripcion' => 'Día del Trabajador',
+                'tipo' => 'PROMO_ESPECIAL',
+
             ],
             [
                 'fecha' => Carbon::create(2025, 12, 25, 0, 0, 0),
                 'descripcion' => 'Navidad',
+                'tipo' => 'PROMO_ESPECIAL',
+
             ],
         ]);
     }

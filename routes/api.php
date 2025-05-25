@@ -22,7 +22,7 @@ Route::post('/compras', [CompraController::class, 'store']);
 Route::get('/compras/finalizadas/{usuarioId}', [CompraController::class, 'comprasFinalizadasPorUsuario']);
 
 
-Route::post('/reportes/clientes-vip-actuales', [ReporteController::class, 'clientesVipActuales']);
+Route::get('/reportes/clientes-vip-actuales', [ReporteController::class, 'clientesVipActuales']);
 Route::post('/reportes/clientes-alta-vip', [ReporteController::class, 'clientesQueSeVolvieronVip']);
 Route::post('/reportes/clientes-baja-vip', [ReporteController::class, 'clientesQueDejaronDeSerVip']);
 

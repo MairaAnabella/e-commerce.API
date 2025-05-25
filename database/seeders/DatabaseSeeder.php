@@ -21,9 +21,7 @@ class DatabaseSeeder extends Seeder
             FechaEspecialSeeder::class,
             UserSeeder::class,
             ProductoSeeder::class,
-            CarritoSeeder::class,
-            CarritoProductoSeeder::class,
-            CompraSeeder::class,
+       
 
         ]);
         /*  User::factory()->create([

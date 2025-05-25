@@ -11,7 +11,9 @@ class FechaEspecial extends Model
     use HasFactory, Notifiable;
     protected $fillable=[
         'fecha',
-        'descripcion'
+        'descripcion',
+        'tipo'
+      
 
     ];
 }
