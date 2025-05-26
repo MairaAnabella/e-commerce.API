@@ -32,3 +32,14 @@ git clone https://github.com/MairaAnabella/e-commerce.API.git
 cd e-commerce.API/laravel-api
 ```
 
+---
+🧪 Uso de Seeders – Datos de prueba
+Este proyecto incluye seeders personalizados para poblar la base de datos con usuarios, productos y otros datos necesarios para probar el funcionamiento del sistema.
+
+▶️ Seeders disponibles:
+UserSeeder → Crea usuarios
+
+ProductoSeeder → Crea productos
+
+CarritoSeeder, CompraSeeder, etc. (según lo necesario)
+
